@@ -28,3 +28,10 @@ header { padding: 16px 0; border-bottom: 1px solid var(--border); }
 footer { border-top: 1px solid var(--border); padding: 24px 0; text-align: center; color: var(--muted); font-size: 0.83rem; }
 footer a { color: var(--accent-light); text-decoration: none; }
 footer a:hover { text-decoration: underline; }
+
+.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 24px; margin-bottom: 24px; text-align: left; }
+.footer-col { display: flex; flex-direction: column; gap: 6px; }
+.footer-col strong { color: var(--text); font-size: 0.85rem; margin-bottom: 4px; }
+.footer-col a { color: var(--muted); text-decoration: none; font-size: 0.82rem; transition: color 0.2s; }
+.footer-col a:hover { color: var(--accent-light); }
+.footer-copy { border-top: 1px solid var(--border); padding-top: 16px; font-size: 0.78rem; color: var(--muted); text-align: center; }
